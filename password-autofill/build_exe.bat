@@ -1,18 +1,23 @@
 @echo off
 echo ========================================
 echo  パスワード自動入力ツール - exe作成
+echo  ※このbatはインターネット接続のある
+echo    PCで実行してください。
 echo ========================================
 echo.
-
-REM 必要なパッケージをインストール
-pip install -r requirements.txt
+echo PyInstallerをインストール中...
 pip install pyinstaller
 
 echo.
-echo exeファイルを作成中...
+echo exeファイルを作成中（外部ライブラリなし・標準ライブラリのみ）...
 pyinstaller --onefile --windowed --name "パスワード自動入力ツール" password_autofill.py
 
 echo.
-echo 完了！dist フォルダに "パスワード自動入力ツール.exe" が作成されました。
-echo ダブルクリックで起動できます。
+echo ======================================
+echo  完了！
+echo  dist\パスワード自動入力ツール.exe
+echo  を作成しました。
+echo  このexeファイルだけをオフラインPCに
+echo  コピーしてください。
+echo ======================================
 pause

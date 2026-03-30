@@ -1,3 +1,12 @@
-selenium>=4.0.0
-webdriver-manager>=4.0.0
-pyperclip>=1.8.0
+# 外部ライブラリは不要です。
+# Python 3.x 標準ライブラリのみで動作します。
+#
+# 使用している標準ライブラリ:
+#   tkinter   - GUIウィンドウ
+#   json      - データ保存
+#   base64    - パスワードのエンコード
+#   ctypes    - Windows SendInput API（キーボード入力シミュレーション）
+#   webbrowser- ブラウザを開く
+#   threading - バックグラウンド処理
+#   time      - タイミング制御
+#   pathlib   - ファイルパス
